@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container navbar-expand-lg bg-body-secondary fs-5 rounded-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 fw-bold text-danger" href="#">Spicy Magic</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"href="#"role="button"data-bs-toggle="dropdown"aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <section class="banner-container container bg-success-subtle rounded-4">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex align-items-center justify-content-around">
+                    <img src="restaurent-img/ramen-removebg-preview.png" class="d-block w-50" alt="...">
+                    <h1>Ramen</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-around">
+                    <img src="restaurent-img/pasta.png" class="d-block w-50" alt="...">
+                <h1>Pasta</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-around">
+                    <img src="restaurent-img/burger-removebg-preview.png" class="d-block w-50" alt="...">
+                    <h1>Burger</h1>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon rounded-circle bg-black" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon rounded-circle bg-black" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+    </header>
+    <main>
+        <section class="service-container mt-5 container p-5 bg-danger-subtle rounded-4">
+            <h1 class="text-center text-primary-emphasis p-4">OUR MENUS</h1>
+            <div class="row d-flex gap-3 mt-5">
+                
+                <div class="card col-md-4 col-lg-3 col-sm-12" style="width: 18rem;">
+                    <img src="restaurent-img/burger-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Burger</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card col-md-4 col-lg-3 col-sm-12" style="width: 18rem;">
+                    <img src="restaurent-img/pasta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Pasta</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card col-md-4 col-lg-3 col-sm-12" style="width: 18rem;">
+                    <img src="restaurent-img/ramen-removebg-preview.png" class="card-img-top mt-4" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Ramen</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card col-md-4 col-lg-3 col-sm-12" style="width: 18rem;">
+                    <img src="restaurent-img/pizza2-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Pizza</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+
+        <section class="contact us container m-auto mt-5 bg-info-subtle rounded-4">
+          <h1 class="text-center p-5">Contact Us</h1>
+          <div class="contact-us-container row">
+            <div class="form-container border border-1 w-50 col-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                <label for="inputPassword5" class="form-label">Password</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </div>
+
+                <div>
+                  <label for="formFileLg" class="form-label">Large file input example</label>
+                  <input class="form-control form-control-lg" id="formFileLg" type="file">
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="form-img col-6">
+              <img src="restaurent-img/food-banner-removebg-preview.png" alt="">
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white p-5 d-flex justify-content-around">
+      <div>
+        <li class="list-group-item">Logo</li>
+        <li class="list-group-item">Lorem, ipsum.</li>
+        <li class="list-group-item">Lorem.</li>
+        <li class="list-group-item">Lorem, ipsum.</li>
+      </div>
+      <div>
+        <li class="list-group-item">Logo</li>
+        <li class="list-group-item">Lorem, ipsum.</li>
+        <li class="list-group-item">Lorem.</li>
+        <li class="list-group-item">Lorem, ipsum.</li>
+      </div>
+      <div>
+        <li class="list-group-item">Logo</li>
+        <li class="list-group-item">Lorem, ipsum.</li>
+        <li class="list-group-item">Lorem.</li>
+        <li class="list-group-item">Lorem, ipsum.</li>
+      </div>
+      <form>
+        <fieldset disabled>
+          <legend>Disabled fieldset example</legend>
+          <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Disabled input</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+          </div>
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Disabled select menu</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Disabled select</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+              <label class="form-check-label" for="disabledFieldsetCheck">
+                Can't check this
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+    </footer>
+
+    <hr/>
+
+    <div class="text-center">
+      <p>
+        <small>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, incidunt.
+        </small>
+      </p>
+    </div>
+
+    <!-- sript file cdn  -->
+    <div>
+      <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    </div>
+  </body>
+</html>
